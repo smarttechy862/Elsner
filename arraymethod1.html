@@ -34,11 +34,7 @@
 		document.write(brands);
 		document.write("<br>");
 
-		//Access by index number
-		brands[0] = "Converse";
-		document.write(brands);
-		document.write("<br>");
-
+	
 		//Append new element by array length
 		brands[brands.length] = "Ambush";
 		document.write(brands);
@@ -55,9 +51,15 @@
 		const snkr = brand.concat(model);
 		document.write(snkr);
 		document.write("<br>");
+		
+		
+			//Access by index number
+		brands[0] = "Converse";
+		document.write(brands);
+		document.write("<br>");
 
 		//Splice
-		const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		const fruits = ["Kiwi", "Avocado", "Apple", "Mango"];
 		document.write(fruits);
 		document.write("<br>");
 		let removed = fruits.splice(2, 2, "Lemon", "Kiwi"); 
