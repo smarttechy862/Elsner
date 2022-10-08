@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Method</title>
+</head>
+<body>
+	<script>
+		const brands = ["Nike","Adidas","Asics","Puma"];
+
+		document.write(brands);
+		document.write("<br>");
+
+		//POP METHOD-remove last element
+		brands.pop();
+		document.write(brands);
+		document.write("<br>");
+
+
+		//PUSH METHOD-add element at last
+		brands.push("Jordan");
+		document.write(brands);
+		document.write("<br>");
+
+
+		//SHIFT -removes first element
+		brands.shift()
+		document.write(brands);
+		document.write("<br>");
+
+		//UNSHIFT -add new elemnt at first
+		brands.unshift("Stussy");
+		document.write(brands);
+		document.write("<br>");
+
+		//Access by index number
+		brands[0] = "Converse";
+		document.write(brands);
+		document.write("<br>");
+
+		//Append new element by array length
+		brands[brands.length] = "Ambush";
+		document.write(brands);
+		document.write("<br>");
+
+		//Delete operator
+		delete brands[0];
+		document.write(brands);
+		document.write("<br>");
+
+		//Concatenation
+		const brand = ["Jordan","Adidas","Converse"];
+		const model = ["High Tops1","Superstar","Chuck Taylor"];
+		const snkr = brand.concat(model);
+		document.write(snkr);
+		document.write("<br>");
+
+		//Splice
+		const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		document.write(fruits);
+		document.write("<br>");
+		let removed = fruits.splice(2, 2, "Lemon", "Kiwi"); 
+		document.write(fruits);
+		document.write("<br>");
+		document.write(removed);
+		document.write("<br>");
+
+		//Slice
+		const vehicle = ["Car", "Bike", "Bicycle", "Tram", "Train"];
+		const trans = vehicle.slice(3);
+		document.write(trans);
+		document.write("<br>");
+	</script>
+</body>
+</html>
